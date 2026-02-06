@@ -1,4 +1,5 @@
-library smart_sync_engine;
+library ;
+
 
 import 'package:uuid/uuid.dart';
 

@@ -1,6 +1,6 @@
-# smart_sync_engine_example
+# example
 
-Demonstrates how to use the smart_sync_engine plugin.
+A new Flutter project.
 
 ## Getting Started
 

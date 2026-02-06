@@ -2,7 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:smart_sync_engine/smart_sync_engine.dart';
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized(); // 🔥 REQUIRED
+  TestWidgetsFlutterBinding.ensureInitialized(); 
 
   test('Executes task successfully', () async {
     bool executed = false;

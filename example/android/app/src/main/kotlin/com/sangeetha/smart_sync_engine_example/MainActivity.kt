@@ -1,4 +1,4 @@
-package com.example.smart_sync_engine_example
+package com.sangeetha.smart_sync_engine_example
 
 import io.flutter.embedding.android.FlutterActivity
 

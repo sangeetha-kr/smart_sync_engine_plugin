@@ -1,7 +1,9 @@
 name: smart_sync_engine
 description: "Enterprise-grade offline sync and retry manager for Flutter applications."
 version: 0.0.1
-homepage:
+homepage: https://github.com/sangeetha-kr/smart_sync_engine
+repository: https://github.com/sangeetha-kr/smart_sync_engine
+issue_tracker: https://github.com/sangeetha-kr/smart_sync_engine/issues
 
 environment:
   sdk: ^3.10.4
@@ -14,6 +16,7 @@ dependencies:
   path: ^1.9.0
   uuid: ^4.0.0
   plugin_platform_interface: ^2.0.2
+  crypto: ^3.0.3
 
 dev_dependencies:
   flutter_test:
@@ -24,7 +27,7 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
+#flutter:
   # This section identifies this Flutter project as a plugin project.
   # The 'pluginClass' specifies the class (in Java, Kotlin, Swift, Objective-C, etc.)
   # which should be registered in the plugin registry. This is required for
@@ -35,18 +38,18 @@ flutter:
   # This is required for using `dart:ffi`.
   # All these are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
-  plugin:
-    platforms:
-    # This plugin project was generated without specifying any
-    # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
-    # then add platforms following the instruction here:
-    # https://flutter.dev/to/pubspec-plugin-platforms
-    # -------------------
-      android:
-        package: com.sangeetha.smart_sync_engine
-        pluginClass: SmartSyncEnginePlugin
-      ios:
-        pluginClass: SmartSyncEnginePlugin
+  #plugin:
+    # platforms:
+    # # This plugin project was generated without specifying any
+    # # platforms with the `--platform` argument. If you see the `some_platform` map below, remove it and
+    # # then add platforms following the instruction here:
+    # # https://flutter.dev/to/pubspec-plugin-platforms
+    # # -------------------
+    #   android:
+    #     package: com.sangeetha.smart_sync_engine
+    #     pluginClass: SmartSyncEnginePlugin
+    #   ios:
+    #     pluginClass: SmartSyncEnginePlugin
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:
