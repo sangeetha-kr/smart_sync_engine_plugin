@@ -1,18 +1,57 @@
-<<<<<<< HEAD
 # Smart Sync Engine
 
-A production-grade offline-first sync and retry manager for Flutter apps.
+**Smart Sync Engine** is a production-ready, offline-first synchronization and retry manager for Flutter applications.
+
+It guarantees your critical tasks (API calls, uploads, background actions) are executed reliably — even when the network is unstable or unavailable.
+
+Built for real-world production apps that demand reliability.
+
+---
+
+## Why Smart Sync Engine?
+
+Mobile networks are unreliable.
+
+This plugin ensures:
+
+- No lost API requests  
+- Automatic retries  
+- Offline support  
+- Smooth user experience  
+- Zero manual retry logic  
+
+---
 
 ## Features
 
-- Offline queue  
-- Automatic retries with limits
-- Conflict resolution strategies  
-- Network-aware syncing
-- Works on Android, iOS, Web, Desktop  
-- No native dependencies  
+- Persistent offline task queue  
+- Automatic retries with limits  
+- Network-aware syncing  
+- Conflict handling (upcoming)  
+- Android, iOS, Web, Desktop support  
+- Lightweight and fast  
+- No native configuration required  
 
-## Usage
+---
+
+## Installation
+
+Add this to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  smart_sync_engine: ^0.0.1
+```
+
+Then run:
+
+```bash
+flutter pub get
+```
+
+---
+
+## Basic Usage
 
 ```dart
 final engine = SmartSyncEngine(maxRetries: 3);
@@ -27,9 +66,38 @@ engine.enqueue(
 );
 
 await engine.syncNow();
+```
 
+---
 
-=======
-# smart_sync_engine_plugin
-Enterprise-grade offline sync and automatic retry engine for Flutter applications.
->>>>>>> c5f40637425429cbed160df8cb249497d268b811
+## How It Works
+
+- Tasks are queued locally
+- Internet connectivity is monitored
+- When online → tasks execute automatically
+- Failures retry based on policy
+- Success removes task from queue
+
+No lost actions. Ever.
+
+---
+
+## Common Use Cases
+
+- E-commerce order submission
+- Offline form saving
+- File uploads
+- Background sync
+- Payment verification
+- API reliability layer
+
+---
+
+## Configuration
+
+```dart
+final engine = SmartSyncEngine(
+  maxRetries: 5,
+  retryDelay: Duration(seconds: 5),
+);
+```

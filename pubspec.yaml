@@ -1,6 +1,6 @@
 name: smart_sync_engine
 description: "Enterprise-grade offline sync and retry manager for Flutter applications."
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/sangeetha-kr/smart_sync_engine
 repository: https://github.com/sangeetha-kr/smart_sync_engine
 issue_tracker: https://github.com/sangeetha-kr/smart_sync_engine/issues
